@@ -1,18 +1,33 @@
+---
+import logo from "../../assets/PBNJ Logo No Background.png";
+---
+
 <nav class="bg-white shadow-md fixed top-0 left-0 w-full z-50">
   <div class="max-w-7xl mx-auto px-6 py-3 flex items-center justify-between">
     <!-- Logo -->
     <a href="/" class="flex items-center">
-      <img src="/justicia.png" alt="Legal Staff" class="h-10 md:h-12" />
+      <img src={logo.src} alt="PB&J Contracting" class="h-10 md:h-12 w-auto" />
     </a>
 
     <!-- Links md+ -->
-    <ul class="hidden md:flex space-x-8">
+    <ul class="hidden md:flex space-x-8 items-center">
       <li>
         <a
           href="/"
           class="relative group text-gray-700 font-bold transition-colors duration-300 hover:text-[#1D3A75]"
         >
           Home
+          <span
+            class="absolute left-0 -bottom-2 w-0 h-0.5 bg-[#1D3A75] transition-all duration-300 group-hover:w-full"
+          ></span>
+        </a>
+      </li>
+      <li>
+        <a
+          href="/services"
+          class="relative group text-gray-700 font-bold transition-colors duration-300 hover:text-[#1D3A75]"
+        >
+          Services
           <span
             class="absolute left-0 -bottom-2 w-0 h-0.5 bg-[#1D3A75] transition-all duration-300 group-hover:w-full"
           ></span>
@@ -31,32 +46,21 @@
       </li>
       <li>
         <a
-          href="/blog"
-          class="relative group text-gray-700 font-bold transition-colors duration-300 hover:text-[#1D3A75]"
-        >
-          Blog
-          <span
-            class="absolute left-0 -bottom-2 w-0 h-0.5 bg-[#1D3A75] transition-all duration-300 group-hover:w-full"
-          ></span>
-        </a>
-      </li>
-      <li>
-        <a
           href="/contact"
-          class="px-4 py-2 text-white font-semibold rounded-3xl bg-[#0B2545] hover:bg-[#1D3A75] transition"
+          class="px-4 py-2 text-white font-semibold rounded-md bg-[#0B2545] hover:bg-[#1D3A75] transition"
         >
-          Contacto
+          Contact
         </a>
       </li>
     </ul>
 
-    <!-- Menú hamburguesa móvil -->
+    <!-- Mobile hamburger menu -->
     <div class="md:hidden relative">
       <input id="menu-toggle" type="checkbox" class="peer hidden" />
 
-      <!-- Botón hamburguesa / cierre -->
+      <!-- Hamburger / close button -->
       <label for="menu-toggle" class="cursor-pointer z-50 flex items-center">
-        <!-- menu móvil  -->
+        <!-- Mobile menu icon -->
         <svg
           class="h-6 w-6 text-gray-700 peer-checked:hidden"
           fill="none"
@@ -87,17 +91,17 @@
         </svg>
       </label>
 
-      <!-- Overlay semi-transparente -->
+      <!-- Semi-transparent overlay -->
       <label
         for="menu-toggle"
         class="fixed inset-0 bg-black/60 hidden peer-checked:block cursor-pointer z-40"
       ></label>
 
-      <!-- Menú lateral -->
+      <!-- Side menu -->
       <div
         class="fixed top-0 right-0 h-full w-64 bg-white shadow-lg transform translate-x-full transition-transform duration-300 peer-checked:translate-x-0 z-50"
       >
-        <!-- Botón de cierre -->
+        <!-- Close button -->
         <div class="flex justify-end p-4">
           <label for="menu-toggle" class="cursor-pointer">
             <svg
@@ -126,6 +130,13 @@
           </li>
           <li>
             <a
+              href="/services"
+              class="text-gray-700 text-lg font-bold hover:text-[#1D3A75]"
+              >Services</a
+            >
+          </li>
+          <li>
+            <a
               href="/about"
               class="text-gray-700 text-lg font-bold hover:text-[#1D3A75]"
               >About</a
@@ -133,17 +144,10 @@
           </li>
           <li>
             <a
-              href="/blog"
-              class="text-gray-700 text-lg font-bold hover:text-[#1D3A75]"
-              >Blog</a
-            >
-          </li>
-          <li>
-            <a
               href="/contact"
-              class="px-4 py-2 text-white font-semibold rounded-lg bg-[#0B2545] hover:bg-[#1D3A75] transition"
+              class="px-4 py-2 text-white font-semibold rounded-md bg-[#0B2545] hover:bg-[#1D3A75] transition"
             >
-              Contacto
+              Contact
             </a>
           </li>
         </ul>

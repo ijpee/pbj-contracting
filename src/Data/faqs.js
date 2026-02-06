@@ -1,23 +1,22 @@
-// data/faqs.js
 export const faqs = [
   {
-    question: 'What legal services do you offer?',
+    question: 'What services does PB&J Contracting offer?',
     answer:
-      'We provide advice and representation in civil, criminal, labor, and commercial law, adapting to the needs of each client.',
+      'We specialise in precision irrigation, pump station design and construction, fertigation and dosing systems, and electrical automation — covering the full spectrum from pump to point of application.',
   },
   {
     question: 'How can I request a consultation?',
     answer:
-      'You can contact us through the form in the contact section or by phone. We will respond promptly to schedule an appointment.',
+      'You can contact us through the form on our Contact page or give us a call. We respond promptly to discuss your project needs.',
   },
   {
-    question: 'Do you handle cases nationwide?',
+    question: 'Do you work across all of New Zealand?',
     answer:
-      'Yes, we have a presence in various provinces and also provide virtual consultations for clients across the country.',
+      'Yes, we proudly serve clients nationwide — from orchards and vineyards to premier golf courses and commercial operations.',
   },
   {
-    question: 'What is the cost of an initial consultation?',
+    question: 'What industries do you work with?',
     answer:
-      'The first consultation is free of obligation. Afterwards, we provide a clear quote tailored to your specific case.',
+      'We work with golf courses, orchards, vineyards, tunnel houses, plant nurseries, and other horticultural and commercial operations requiring water and nutrient management.',
   },
 ];

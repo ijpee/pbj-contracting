@@ -1,25 +1,25 @@
 export const testimonials = [
   {
-    name: 'María González',
-    role: 'Private Client',
+    name: 'Sarah Mitchell',
+    role: 'Orchard Manager',
     message:
-      'The Legal Staff team supported me throughout the entire process. Thanks to their advice, I was able to resolve my case fairly.',
+      'PB&J Contracting designed and installed our entire irrigation system. The precision and efficiency has made a real difference to our crop yields.',
     image:
       'https://randomuser.me/api/portraits/women/44.jpg',
   },
   {
-    name: 'Carlos Fernández',
-    role: 'Entrepreneur',
+    name: 'James Henderson',
+    role: 'Golf Course Superintendent',
     message:
-      'Excellent service — always available to answer questions and provide quick solutions. I highly recommend them.',
+      'Excellent service — always available and the quality of their pump station work is second to none. Highly recommend them.',
     image:
       'https://randomuser.me/api/portraits/men/35.jpg',
   },
   {
-    name: 'Laura Pérez',
-    role: 'Business Owner',
+    name: 'Emma Clarke',
+    role: 'Vineyard Owner',
     message:
-      'I completely recommend Legal Staff. They helped me draft clear contracts and protect my business from day one.',
+      'From fertigation setup to electrical automation, PB&J delivered a true turnkey solution. Our vineyard has never been in better shape.',
     image:
       'https://randomuser.me/api/portraits/women/68.jpg',
   },

@@ -1,25 +1,48 @@
 ---
-import headerImg from "../../assets/img/headerImg.jpg";
+import posterImg from "../../assets/img/Aerial Autumn Vineyard.JPG";
 ---
 
-<header
-  class="relative h-screen bg-cover bg-center"
-  style={{ backgroundImage: `url(${headerImg.src})` }}
->
-  <div class="absolute inset-0 bg-black/70"></div>
-  <main
-    class="relative z-10 flex flex-col items-center justify-center h-full text-center px-4"
-  >
-    <h1 class="text-4xl md:text-6xl font-bold text-white mb-6">Legal Advice</h1>
-    <p class="text-lg md:text-2xl text-white mb-8 max-w-2xl">
-      We provide reliable legal solutions for businesses and individuals,
-      protecting your rights and ensuring legal security.
-    </p>
-    <a
-      href="/contact"
-      class="px-6 py-3 bg-[#0B2545] hover:bg-[#1D3A75] text-white font-semibold rounded-3xl transition"
+<header class="relative h-screen overflow-hidden">
+  <img
+    src={posterImg.src}
+    alt="Aerial view of an autumn vineyard"
+    class="absolute inset-0 w-full h-full object-cover z-0 rotate-2 scale-105 origin-center"
+  />
+  <!-- Content Wrapper anchored to bottom-left -->
+  <div class="absolute bottom-0 left-0 w-full md:w-[45%] lg:w-[40%] z-20">
+    <!-- Angled Background Layer -->
+    <div
+      class="absolute inset-0 bg-white/75 backdrop-blur-sm -z-10"
+      style="clip-path: polygon(0 0, 100% 0, 85% 100%, 0 100%);"
     >
-      Contact Us
-    </a>
-  </main>
+    </div>
+
+    <!-- Text Content -->
+    <div class="p-8 md:p-12 pb-16 flex flex-col items-start">
+      <h1
+        class="text-3xl md:text-4xl lg:text-5xl font-bold text-[#0B2545] mb-4 leading-tight"
+      >
+        New Zealand’s Leading Water Management Specialists
+      </h1>
+      <p class="text-base md:text-lg text-gray-800 mb-6 leading-relaxed">
+        Delivering expert design, build, and maintenance for irrigation systems.
+      </p>
+
+      <!-- Buttons -->
+      <div class="flex flex-col sm:flex-row gap-4 mb-2">
+        <a
+          href="/contact"
+          class="px-6 py-2.5 bg-[#0B2545] hover:bg-[#1D3A75] text-white font-semibold rounded-md transition shadow-md text-center text-sm md:text-base"
+        >
+          Contact Us
+        </a>
+        <a
+          href="#services"
+          class="px-6 py-2.5 bg-transparent border-2 border-[#0B2545] hover:bg-white/50 text-[#0B2545] font-semibold rounded-md transition text-center text-sm md:text-base"
+        >
+          View Services
+        </a>
+      </div>
+    </div>
+  </div>
 </header>

@@ -1,19 +1,37 @@
 ---
 import FeatureCard from "./featureCard.astro";
 import { features } from "../../Data/features.js";
+
+// Import images
+import imgIrrigation from "../../assets/img/Aerial Orchard.JPG";
+import imgPump from "../../assets/img/Industrial Filtration Pump Hub.jpg";
+import imgFertigation from "../../assets/img/Outdoor Mixing Station.jpg";
+import imgElectrical from "../../assets/img/Pump Room 2.jpg";
+
+const imageMap = {
+  irrigation: imgIrrigation,
+  pump: imgPump,
+  fertigation: imgFertigation,
+  electrical: imgElectrical,
+};
 ---
 
-<section class="py-16 bg-neutral">
+<section id="services" class="py-16 bg-neutral">
   <div class="max-w-7xl mx-auto px-6 text-center">
-    <h2 class="text-3xl md:text-4xl font-bold text-[#0B2545] mb-8">
+    <h2 class="text-3xl md:text-4xl font-bold text-[#0B2545] mb-4">
       Our Services
     </h2>
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+    <p class="text-gray-600 max-w-2xl mx-auto mb-12">
+      We handle every aspect from pump to point of application.
+    </p>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
       {
         features.map((feature) => (
           <FeatureCard
             title={feature.title}
             description={feature.description}
+            image={imageMap[feature.imageKey]}
           />
         ))
       }
