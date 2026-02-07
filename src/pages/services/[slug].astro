@@ -37,6 +37,8 @@ const title = `${feature.title} | PB&J Services`;
       src={imageMap[feature.imageKey]}
       alt={feature.title}
       class="absolute inset-0 w-full h-full object-cover"
+      loading="eager"
+      fetchpriority="high"
     />
     <div class="absolute inset-0 bg-black/40 flex flex-col items-center justify-center text-center px-4">
       <h1 class="text-4xl md:text-6xl font-bold text-white mb-4 drop-shadow-md">

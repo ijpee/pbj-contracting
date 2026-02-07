@@ -10,7 +10,7 @@ import imgFertigation from "../../assets/img/Outdoor Mixing Station.jpg";
 import imgElectrical from "../../assets/img/Pump Room 2.jpg";
 
 // Hero Image
-import heroImage from "../../assets/img/Aerial Hillside Orchard.JPG";
+import heroImage from "../../assets/img/Aerial Tunnel House - Horiculture.jpg";
 import waterBladder from "../../assets/img/Aerial Water Bladder.jpg";
 
 const imageMap = {
@@ -28,8 +28,12 @@ const title = "Our Services | PB&J Contracting";
   <div class="relative w-full h-[50vh] min-h-[400px]">
     <Image
       src={heroImage}
-      alt="Aerial view of hillside orchard irrigation"
+      alt="Aerial view of horticulture tunnel houses"
       class="absolute inset-0 w-full h-full object-cover"
+      loading="eager"
+      fetchpriority="high"
+      quality="mid"
+      formats={['avif', 'webp']}
     />
     <div class="absolute inset-0 bg-gradient-to-r from-[#0B2545]/90 to-transparent flex flex-col justify-center px-10 md:px-20">
       <h1 class="text-4xl md:text-6xl font-bold text-white mb-4">
@@ -67,6 +71,9 @@ const title = "Our Services | PB&J Contracting";
                       src={imageMap[feature.imageKey]} 
                       alt={feature.title}
                       class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
+                      widths={[400, 800]}
+                      sizes="(max-width: 768px) 100vw, 400px"
+                      formats={['avif', 'webp']}
                    />
                    <div class="absolute inset-0 bg-[#0B2545]/0 group-hover:bg-[#0B2545]/10 transition-colors duration-300"></div>
                 </div>

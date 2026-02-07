@@ -1,12 +1,17 @@
 ---
 import posterImg from "../../assets/img/Aerial Autumn Vineyard.JPG";
+import { Image } from "astro:assets";
 ---
 
 <header class="relative h-screen overflow-hidden">
-  <img
-    src={posterImg.src}
+  <Image
+    src={posterImg}
     alt="Aerial view of an autumn vineyard"
     class="absolute inset-0 w-full h-full object-cover z-0 rotate-2 scale-105 origin-center"
+    loading="eager"
+    fetchpriority="high"
+    quality="mid"
+    formats={['avif', 'webp']}
   />
   <!-- Content Wrapper anchored to bottom-left -->
   <div class="absolute bottom-0 left-0 w-full md:w-[45%] lg:w-[40%] z-20">

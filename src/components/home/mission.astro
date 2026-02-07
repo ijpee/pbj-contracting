@@ -1,5 +1,6 @@
 ---
 import MissionImg from "../../assets/img/Pipe Welding.jpg";
+import { Image } from "astro:assets";
 ---
 
 <section
@@ -7,8 +8,8 @@ import MissionImg from "../../assets/img/Pipe Welding.jpg";
 >
   <!-- Left Image -->
   <div class="w-full md:w-1/2">
-    <img
-      src={MissionImg.src}
+    <Image
+      src={MissionImg}
       alt="Expert Pipe Welding and Installation"
       class="w-full h-[300px] md:h-[400px] object-cover rounded-xl shadow-md"
     />

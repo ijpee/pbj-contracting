@@ -2,6 +2,7 @@
 import imgWhoWeAre from "../../assets/img/Aerial Tunnel House - Horiculture.jpg";
 import imgMission from "../../assets/img/Aerial Water Bladder.jpg";
 import imgVision from "../../assets/img/Aerial Autmn Vineyard 2.JPG";
+import { Image } from "astro:assets";
 ---
 
 <section>
@@ -14,8 +15,8 @@ import imgVision from "../../assets/img/Aerial Autmn Vineyard 2.JPG";
   >
     <!-- Image -->
     <div class="w-full md:w-1/2">
-      <img
-        src={imgWhoWeAre.src}
+      <Image
+        src={imgWhoWeAre}
         alt="Horticulture Tunnel Houses"
         class="w-full h-[300px] md:h-80 object-cover rounded-xl shadow-md"
       />
@@ -69,8 +70,8 @@ import imgVision from "../../assets/img/Aerial Autmn Vineyard 2.JPG";
 
       <!-- Image -->
       <div class="w-full md:w-1/2">
-        <img
-          src={imgMission.src}
+        <Image
+          src={imgMission}
           alt="Water Storage Solutions"
           class="w-full h-[300px] md:h-80 object-cover rounded-xl shadow-md"
         />
@@ -101,8 +102,8 @@ import imgVision from "../../assets/img/Aerial Autmn Vineyard 2.JPG";
 
       <!-- Image -->
       <div class="w-full md:w-1/2">
-        <img
-          src={imgVision.src}
+        <Image
+          src={imgVision}
           alt="New Zealand Vineyard"
           class="w-full h-[300px] md:h-80 object-cover rounded-xl shadow-md"
         />
