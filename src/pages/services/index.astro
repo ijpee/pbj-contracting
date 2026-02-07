@@ -20,7 +20,7 @@ const imageMap = {
   electrical: imgElectrical,
 };
 
-const title = "Our Services | PB&J Contracting";
+const title = "Our Services | PB+J Contracting";
 ---
 
 <Layout title={title}>
@@ -29,7 +29,7 @@ const title = "Our Services | PB&J Contracting";
     <Image
       src={heroImage}
       alt="Aerial view of horticulture tunnel houses"
-      class="absolute inset-0 w-full h-full object-cover"
+      class="fixed inset-0 w-full h-full object-cover z-0"
       loading="eager"
       fetchpriority="high"
       quality="mid"
@@ -46,21 +46,21 @@ const title = "Our Services | PB&J Contracting";
   </div>
 
   <!-- Intro Block -->
-  <section class="py-16 bg-neutral-50 text-center">
+  <section class="relative z-10 py-16 bg-neutral-50 text-center">
     <div class="max-w-4xl mx-auto px-6">
       <h2 class="text-3xl font-bold text-[#0B2545] mb-6">
         Sustainable solutions for water management
       </h2>
       <p class="text-lg text-gray-600 leading-relaxed">
         With a region-wide presence and solutions-focused approach,
-        PB&J Contracting addresses water challenges in horticultural,
+        PB+J Contracting addresses water challenges in horticultural,
         commercial and municipal sectors across New Zealand.
       </p>
     </div>
   </section>
 
   <!-- Service Grid (Card Style) -->
-  <section class="py-12 bg-neutral-100">
+  <section class="relative z-10 py-12 bg-neutral-100">
     <div class="max-w-7xl mx-auto px-6">
        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {features.map((feature) => (
@@ -105,7 +105,7 @@ const title = "Our Services | PB&J Contracting";
   </section>
 
   <!-- Partnering for Progress Section -->
-  <section class="py-20 bg-white">
+  <section class="relative z-10 py-20 bg-white">
       <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center gap-12">
           <div class="w-full md:w-1/2">
               <h2 class="text-3xl md:text-4xl font-bold text-[#0B2545] mb-6">Partnering for progress</h2>
@@ -125,7 +125,7 @@ const title = "Our Services | PB&J Contracting";
              <div class="rounded-lg overflow-hidden shadow-lg h-[400px]">
                 <Image 
                     src={waterBladder} 
-                    alt="PB&J Team on site" 
+                    alt="PB+J Team on site" 
                     class="w-full h-full object-cover"
                 />
              </div>
@@ -134,17 +134,16 @@ const title = "Our Services | PB&J Contracting";
   </section>
 
   <!-- Need Support Banner -->
-  <section class="py-16 bg-[#005ea2] relative overflow-hidden">
-     <!-- Abstract Background shapes or overlay could go here -->
-     <div class="absolute inset-0 opacity-10 bg-[url('/path/to/texture.png')]"></div>
+  <section class="py-16 relative z-10 overflow-hidden">
+     <div class="absolute inset-0 bg-[#005ea2]/90"></div>
      
      <div class="max-w-4xl mx-auto px-6 text-center relative z-10 text-white">
         <h2 class="text-3xl md:text-4xl font-bold mb-4">Need support?</h2>
         <p class="text-lg text-blue-100 mb-8 max-w-2xl mx-auto">
             Need support with your orchard irrigation, pump station or infrastructure? 
-            Your local PB&J representative is only a call away.
+            Your local PB+J representative is only a call away.
         </p>
-        <a href="/contact" class="inline-block border-2 border-white text-white font-bold py-3 px-8 rounded hover:bg-white hover:text-[#005ea2] transition-colors">
+        <a href="/contact" class="inline-block border-2 border-white bg-white text-[#0B2545] font-bold py-3 px-8 rounded hover:bg-transparent hover:text-white transition-colors">
              Get in Touch &rarr;
         </a>
      </div>

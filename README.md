@@ -1,6 +1,6 @@
-💧 PB&J Contracting Ltd — Water Management Specialists
+💧 PB+J Contracting Ltd — Water Management Specialists
 
-Professional website built with **Astro** for PB&J Contracting Ltd, a leading water management and irrigation specialist based in New Zealand.
+Professional website built with **Astro** for PB+J Contracting Ltd, a leading water management and irrigation specialist based in New Zealand.
 
 ---
 

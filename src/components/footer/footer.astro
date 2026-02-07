@@ -3,7 +3,7 @@ import logo from "../../assets/PBNJ Logo No Background.png";
 import { Image } from "astro:assets";
 ---
 
-<footer class="bg-[#0B2545] text-white py-10">
+<footer class="relative z-10 bg-[#0B2545] text-white py-10">
   <div class="max-w-6xl mx-auto flex flex-col items-center gap-10 text-center">
     <!-- Sections -->
     <div
@@ -14,7 +14,7 @@ import { Image } from "astro:assets";
          <a href="/" class="flex items-center">
           <Image 
             src={logo} 
-            alt="PB&J Contracting" 
+            alt="PB+J Contracting" 
             class="h-24 w-auto brightness-0 invert opacity-90 hover:opacity-100 transition-opacity" 
           />
         </a>
@@ -92,7 +92,7 @@ import { Image } from "astro:assets";
 
     <!-- Copyright -->
     <div class="text-white text-sm mt-10 border-t border-white/20 pt-6 w-full text-center">
-      &copy; {new Date().getFullYear()} PB&J Contracting Ltd. All rights reserved.
+      &copy; {new Date().getFullYear()} PB+J Contracting Ltd. All rights reserved.
     </div>
   </div>
 </footer>

@@ -1,21 +1,11 @@
 ---
-import bannerImg from "../../assets/img/Aerial Autumn Vineyard.JPG";
-import { Image } from "astro:assets";
 ---
 
 <section
-  class="relative text-white py-20 px-6 overflow-hidden"
+  class="relative z-10 text-white py-20 px-6 overflow-hidden"
 >
-  <!-- Background Image -->
-  <Image
-    src={bannerImg}
-    alt="Aerial view of autumn vineyard"
-    class="absolute inset-0 w-full h-full object-cover -z-10"
-    quality="mid"
-  />
-
-  <!-- Dark overlay for readability -->
-  <div class="absolute inset-0 bg-[#0B2545]/90"></div>
+  <!-- Semi-transparent overlay — hero image peeks through -->
+  <div class="absolute inset-0 bg-[#0B2545]/85"></div>
 
   <div class="relative max-w-3xl mx-auto flex flex-col items-center gap-6">
     <!-- Title -->
@@ -25,7 +15,7 @@ import { Image } from "astro:assets";
 
     <!-- Description -->
     <p class="text-gray-200 text-lg sm:text-xl text-center">
-      PB&amp;J Contracting is ready to deliver expert water management
+      PB+J Contracting is ready to deliver expert water management
       solutions tailored to your needs. Get in touch today.
     </p>
 

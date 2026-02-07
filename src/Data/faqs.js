@@ -1,6 +1,6 @@
 export const faqs = [
   {
-    question: 'What services does PB&J Contracting offer?',
+    question: 'What services does PB+J Contracting offer?',
     answer:
       'We specialise in precision irrigation, pump station design and construction, fertigation and dosing systems, and electrical automation — covering the full spectrum from pump to point of application.',
   },

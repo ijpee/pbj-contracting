@@ -5,7 +5,7 @@ export const teamMembers = [
     image:
       "https://images.unsplash.com/photo-1607746882042-944635dfe10e?ixlib=rb-4.1.0&auto=format&fit=crop&w=800&q=60",
     description:
-      "With decades of experience in water management and irrigation design, Barry leads PB&J with hands-on expertise and a passion for quality.",
+      "With decades of experience in water management and irrigation design, Barry leads PB+J with hands-on expertise and a passion for quality.",
   },
   {
     name: "Mark Stevens",

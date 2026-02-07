@@ -1,0 +1,63 @@
+---
+import { Image } from "astro:assets";
+import imgHort from "../../assets/img/Aerial Tunnel House - Horiculture.jpg";
+import imgInd from "../../assets/img/Industrial Filtration Pump Hub.jpg";
+import imgInfra from "../../assets/img/Pump Room 2.jpg";
+
+const sectors = [
+  {
+    title: "Horticulture",
+    image: imgHort,
+    link: "/services",
+    description: "Orchards, Vineyards & Nurseries"
+  },
+  {
+    title: "Industrial",
+    image: imgInd,
+    link: "/services",
+    description: "Processing & Filtration Systems"
+  },
+  {
+    title: "Commercial",
+    image: imgInfra,
+    link: "/services",
+    description: "Infrastructure & Municipal"
+  }
+];
+---
+
+<section class="relative z-10 py-20 bg-[#f0f9ff]">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="text-center mb-12">
+      <h2 class="text-3xl md:text-4xl font-bold text-[#0B2545] mb-4">
+        Water Solutions for Every Sector
+      </h2>
+      <p class="text-gray-600 max-w-2xl mx-auto">
+        Tailored irrigation and water management systems for New Zealand's diverse industries.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      {sectors.map((sector) => (
+        <a href={sector.link} class="group relative block h-[500px] overflow-hidden rounded-xl shadow-lg">
+          <Image 
+            src={sector.image} 
+            alt={sector.title}
+            class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+            widths={[400, 800]}
+          />
+          <div class="absolute inset-0 bg-gradient-to-t from-[#0B2545]/90 via-[#0B2545]/40 to-transparent"></div>
+          <div class="absolute bottom-0 left-0 p-8 w-full">
+            <p class="text-blue-200 text-sm font-bold uppercase tracking-wider mb-2">{sector.description}</p>
+            <h3 class="text-3xl font-bold text-white mb-2 group-hover:text-blue-300 transition-colors flex items-center justify-between">
+              {sector.title}
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 transform group-hover:translate-x-2 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+              </svg>
+            </h3>
+          </div>
+        </a>
+      ))}
+    </div>
+  </div>
+</section>

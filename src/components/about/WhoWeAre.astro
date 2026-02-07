@@ -5,13 +5,17 @@ import imgVision from "../../assets/img/Aerial Autmn Vineyard 2.JPG";
 import { Image } from "astro:assets";
 ---
 
-<section>
-  <h2 class="text-3xl text-center md:text-4xl font-bold text-[#0B2545] mt-8">
-    Leading Specialists in Water Management & Irrigation
-  </h2>
+<section class="relative z-10 bg-neutral-50 py-16 text-center">
+  <div class="max-w-4xl mx-auto px-6">
+    <h2 class="text-3xl font-bold text-[#0B2545] mb-6">
+      Leading Specialists in Water Management & Irrigation
+    </h2>
+  </div>
+</section>
 
+<section class="relative z-10 bg-white py-12">
   <div
-    class="px-6 py-16 flex flex-col md:flex-row items-center gap-12 max-w-7xl mx-auto"
+    class="px-6 flex flex-col md:flex-row items-center gap-12 max-w-7xl mx-auto"
   >
     <!-- Image -->
     <div class="w-full md:w-1/2">
@@ -32,8 +36,8 @@ import { Image } from "astro:assets";
         Who We Are
       </h2>
 
-      <p class="text-gray-600 text-base md:text-lg leading-7">
-        <span class="font-bold text-[#0B2545]">PB&J Contracting Ltd</span> is a leading
+      <p class="text-gray-600 text-lg leading-relaxed">
+        <span class="font-bold text-[#0B2545]">PB+J Contracting Ltd</span> is a leading
         water management specialist based in New Zealand. We specialise in creating
         efficient, reliable solutions tailored to diverse sectors, including premier
         golf courses, productive horticultural operations such as orchards,
@@ -45,59 +49,60 @@ import { Image } from "astro:assets";
       </p>
     </div>
   </div>
+</section>
 
-  <!-- Mission Section -->
-  <section class="px-6 py-16 max-w-7xl mx-auto">
-    <div class="flex flex-col md:flex-row items-center gap-12">
-      <!-- Text -->
-      <div class="w-full md:w-1/2 text-center md:text-left">
-        <h2
-          class="text-[#0B2545] text-2xl md:text-3xl font-extrabold uppercase tracking-[4px] mb-4"
-        >
-          Our Approach
-        </h2>
-        <p class="text-gray-600 text-base md:text-lg leading-7">
-          With our dedicated electrical division, we provide a true turnkey
-          approach, seamlessly integrating electrical controls, automation,
-          innovative solar developments, and sophisticated fertigation dosing
-          and monitoring.
-          <br /><br />
-          Whether it's precision drip irrigation for high-value orchards or
-          robust systems for golf course turf health, we handle every aspect from
-          pump to point of application.
-        </p>
-      </div>
-
-      <!-- Image -->
-      <div class="w-full md:w-1/2">
-        <Image
-          src={imgMission}
-          alt="Water Storage Solutions"
-          class="w-full h-[300px] md:h-80 object-cover rounded-xl shadow-md"
-        />
-      </div>
+<!-- Mission Section -->
+<section class="relative z-10 px-6 py-16 bg-neutral-50">
+  <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-12">
+    <!-- Text -->
+    <div class="w-full md:w-1/2 text-center md:text-left">
+      <h2
+        class="text-[#0B2545] text-2xl md:text-3xl font-extrabold uppercase tracking-[4px] mb-4"
+      >
+        Our Approach
+      </h2>
+      <p class="text-gray-600 text-lg leading-relaxed">
+        With our dedicated electrical division, we provide a true turnkey
+        approach, seamlessly integrating electrical controls, automation,
+        innovative solar developments, and sophisticated fertigation dosing
+        and monitoring.
+        <br /><br />
+        Whether it's precision drip irrigation for high-value orchards or
+        robust systems for golf course turf health, we handle every aspect from
+        pump to point of application.
+      </p>
     </div>
-  </section>
 
-  <!-- Vision Section -->
-  <div class="px-6 py-16 bg-gray-50 max-w-7xl mx-auto">
-    <div class="flex flex-col md:flex-row-reverse items-center gap-12">
-      <!-- Text -->
-      <div class="w-full md:w-1/2 text-center md:text-left">
-        <h2
-          class="text-[#0B2545] text-2xl md:text-3xl font-extrabold uppercase tracking-[4px] mb-4"
-        >
-          Our Commitment
-        </h2>
-        <p class="text-gray-600 text-base md:text-lg leading-7">
-          Proudly serving clients New Zealand-wide, we combine technical
-          expertise, quality craftsmanship, and a commitment to water
-          efficiency, nutrient precision, and sustainability to keep your
-          operations thriving year-round.
-          <br /><br />
-          <span class="font-bold text-[#0B2545]">PB&J Contracting</span> — powered
-          sustainably where possible, delivering excellence in every drop.
-        </p>
+    <!-- Image -->
+    <div class="w-full md:w-1/2">
+      <Image
+        src={imgMission}
+        alt="Water Storage Solutions"
+        class="w-full h-[300px] md:h-80 object-cover rounded-xl shadow-md"
+      />
+    </div>
+  </div>
+</section>
+
+<!-- Vision Section -->
+<section class="relative z-10 px-6 py-16 bg-white">
+  <div class="max-w-7xl mx-auto flex flex-col md:flex-row-reverse items-center gap-12">
+    <!-- Text -->
+    <div class="w-full md:w-1/2 text-center md:text-left">
+      <h2
+        class="text-[#0B2545] text-2xl md:text-3xl font-extrabold uppercase tracking-[4px] mb-4"
+      >
+        Our Commitment
+      </h2>
+      <p class="text-gray-600 text-lg leading-relaxed">
+        Proudly serving clients New Zealand-wide, we combine technical
+        expertise, quality craftsmanship, and a commitment to water
+        efficiency, nutrient precision, and sustainability to keep your
+        operations thriving year-round.
+        <br /><br />
+        <span class="font-bold text-[#0B2545]">PB+J Contracting</span> — powered
+        sustainably where possible, delivering excellence in every drop.
+      </p>
       </div>
 
       <!-- Image -->
@@ -109,5 +114,4 @@ import { Image } from "astro:assets";
         />
       </div>
     </div>
-  </div>
-</section>
+  </section>

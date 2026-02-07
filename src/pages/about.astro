@@ -11,17 +11,16 @@ import OurTeam from "../components/about/OurTeam.astro";
   <!-- <OurTeam /> -->
 
   <!-- Need Support Banner -->
-  <section class="py-16 bg-[#005ea2] relative overflow-hidden">
-     <!-- Abstract Background shapes or overlay could go here -->
-     <div class="absolute inset-0 opacity-10 bg-[url('/path/to/texture.png')]"></div>
+  <section class="py-16 relative z-10 overflow-hidden">
+     <div class="absolute inset-0 bg-[#005ea2]/90"></div>
      
      <div class="max-w-4xl mx-auto px-6 text-center relative z-10 text-white">
         <h2 class="text-3xl md:text-4xl font-bold mb-4">Need support?</h2>
         <p class="text-lg text-blue-100 mb-8 max-w-2xl mx-auto">
             Need support with your orchard irrigation, pump station or infrastructure? 
-            Your local PB&J representative is only a call away.
+            Your local PB+J representative is only a call away.
         </p>
-        <a href="/contact" class="inline-block border-2 border-white text-white font-bold py-3 px-8 rounded hover:bg-white hover:text-[#005ea2] transition-colors">
+        <a href="/contact" class="inline-block border-2 border-white bg-white text-[#0B2545] font-bold py-3 px-8 rounded hover:bg-transparent hover:text-white transition-colors">
              Get in Touch &rarr;
         </a>
      </div>
