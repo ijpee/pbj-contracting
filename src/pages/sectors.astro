@@ -1,0 +1,53 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { sectors } from "../Data/sectors";
+import { Image } from "astro:assets";
+import imgGolf from "../assets/img/Aerial Golf Course.jpg";
+import imgHorticulture from "../assets/img/Aerial Hillside Orchard.JPG";
+import imgNursery from "../assets/img/nursery irrigation.webp";
+import imgTunnel from "../assets/img/Aerial Tunnel House - Horiculture.jpg";
+
+const imageMap = {
+  golf: imgGolf,
+  horticulture: imgHorticulture,
+  nursery: imgNursery,
+  tunnel: imgTunnel
+};
+
+---
+
+<Layout title="Sectors | PB&J Contracting">
+  <div class="pt-24 bg-[#0B2545] text-center py-16 text-white">
+    <h1 class="text-4xl md:text-5xl font-bold mb-4">Industries We Serve</h1>
+    <p class="text-xl text-gray-300 max-w-2xl mx-auto px-4">
+      Tailored water and nutrient management solutions for New Zealand's premier sectors.
+    </p>
+  </div>
+
+  <div class="max-w-7xl mx-auto px-6 py-16">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+      {sectors.map((sector) => (
+        <div class="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100 flex flex-col">
+          <div class="h-64 overflow-hidden relative group">
+             <!-- Placeholder Image Logic -->
+            <Image 
+              src={imageMap[sector.imageKey] || imgTunnel} 
+              alt={sector.title}
+              class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+            />
+             <div class="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors"></div>
+          </div>
+          <div class="p-8 flex-1 flex flex-col">
+            <h2 class="text-2xl font-bold text-[#0B2545] mb-3">{sector.title}</h2>
+            <p class="text-gray-600 mb-6 flex-1 text-lg">
+              {sector.description}
+            </p>
+            <a href="/contact" class="inline-block text-[#1D3A75] font-bold hover:underline">
+              Discuss your project &rarr;
+            </a>
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</Layout>

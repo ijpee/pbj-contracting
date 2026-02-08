@@ -1,7 +1,7 @@
 export const features = [
   {
-    title: 'Precision Irrigation',
-    slug: 'precision-irrigation',
+    title: 'Irrigation Design & Build',
+    slug: 'irrigation-design-build',
     description: 'Custom irrigation systems for orchards, tunnel houses, and nurseries. We design for optimal water efficiency and crop performance across all sectors.',
     longDescription: 'Water is your most valuable resource. We design and install high-efficiency irrigation systems tailored to your specific topography and crop needs. From large-scale orchard drip lines to micro-sprinklers for nurseries, we ensure every drop counts.',
     details: [
@@ -33,7 +33,7 @@ export const features = [
     title: 'Fertigation & Dosing',
     slug: 'fertigation-dosing',
     description: 'Advanced nutrient injection systems that integrate precisely with irrigation for reduced waste and enhanced growth.',
-    longDescription: 'Deliver nutrients exactly where they are needed. our advanced fertigation units integrate seamlessly with your irrigation controller, allowing for precise pH balancing and nutrient injection. This "spoon-feeding" approach reduces fertilizer waste and boosts crop yields.',
+    longDescription: 'Deliver nutrients exactly where they are needed. Our advanced fertigation units integrate seamlessly with your irrigation controller, allowing for precise pH balancing and nutrient injection. This "spoon-feeding" approach reduces fertilizer waste and boosts crop yields.',
     details: [
       'Proportional Dosing Pumps',
       'EC & pH Monitoring/Control',
@@ -49,13 +49,13 @@ export const features = [
     description: 'A true turnkey approach including electrical controls, automation, solar developments, and system monitoring.',
     longDescription: 'Modern irrigation requires smart control. We bring electrical and automation expertise in-house, providing you with a single point of accountability. Control your pumps, valves, and monitors from your smartphone, no matter where you are.',
     details: [
-      'Custom Control Panels & Switchgear',
-      'Telemetry & Remote Monitoring (IoT)',
-      'Solar Pump Integration',
-      'App-based System Management',
-      'Fault Detection & Alerts',
-      'Weather Station Integration'
+        'Custom Control Panels',
+        'Remote Monitoring (Telemetry)',
+        'Solar Power Integration',
+        'VSD (Variable Speed Drive) Setup',
+        'Weather Station Integration',
+        'Alarm Systems'
     ],
     imageKey: 'electrical'
-  },
+  }
 ];
