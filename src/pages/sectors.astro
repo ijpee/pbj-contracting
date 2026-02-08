@@ -6,6 +6,7 @@ import imgGolf from "../assets/img/Aerial Golf Course.jpg";
 import imgHorticulture from "../assets/img/Aerial Hillside Orchard.JPG";
 import imgNursery from "../assets/img/nursery irrigation.webp";
 import imgTunnel from "../assets/img/Aerial Tunnel House - Horiculture.jpg";
+import heroImg from "../assets/img/Aerial Orchard.JPG";
 
 const imageMap = {
   golf: imgGolf,
@@ -17,37 +18,50 @@ const imageMap = {
 ---
 
 <Layout title="Sectors | PB&J Contracting">
-  <div class="pt-24 bg-[#0B2545] text-center py-16 text-white">
-    <h1 class="text-4xl md:text-5xl font-bold mb-4">Industries We Serve</h1>
-    <p class="text-xl text-gray-300 max-w-2xl mx-auto px-4">
-      Tailored water and nutrient management solutions for New Zealand's premier sectors.
-    </p>
-  </div>
-
-  <div class="max-w-7xl mx-auto px-6 py-16">
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
-      {sectors.map((sector) => (
-        <div class="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100 flex flex-col">
-          <div class="h-64 overflow-hidden relative group">
-             <!-- Placeholder Image Logic -->
-            <Image 
-              src={imageMap[sector.imageKey] || imgTunnel} 
-              alt={sector.title}
-              class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-            />
-             <div class="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors"></div>
-          </div>
-          <div class="p-8 flex-1 flex flex-col">
-            <h2 class="text-2xl font-bold text-[#0B2545] mb-3">{sector.title}</h2>
-            <p class="text-gray-600 mb-6 flex-1 text-lg">
-              {sector.description}
-            </p>
-            <a href="/contact" class="inline-block text-[#1D3A75] font-bold hover:underline">
-              Discuss your project &rarr;
-            </a>
-          </div>
-        </div>
-      ))}
+  <div class="relative w-full h-[50vh] min-h-[400px]">
+    <Image
+      src={heroImg}
+      alt="Sectors Hero"
+      class="fixed inset-0 w-full h-full object-cover z-0"
+      loading="eager"
+      fetchpriority="high"
+    />
+    <div class="absolute inset-0 bg-gradient-to-r from-[#0B2545]/90 to-transparent flex flex-col justify-center px-10 md:px-20">
+      <h1 class="text-4xl md:text-6xl font-bold text-white mb-4">
+        Industries We Serve
+      </h1>
+      <p class="text-xl md:text-2xl text-gray-200 max-w-xl">
+        Tailored water and nutrient management solutions for New Zealand's premier sectors.
+      </p>
     </div>
   </div>
+
+  <section class="relative z-10 bg-white py-16">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+        {sectors.map((sector) => (
+          <div class="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100 flex flex-col">
+            <div class="h-64 overflow-hidden relative group">
+               <!-- Placeholder Image Logic -->
+              <Image 
+                src={imageMap[sector.imageKey] || imgTunnel} 
+                alt={sector.title}
+                class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+              />
+               <div class="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors"></div>
+            </div>
+            <div class="p-8 flex-1 flex flex-col">
+              <h2 class="text-2xl font-bold text-[#0B2545] mb-3">{sector.title}</h2>
+              <p class="text-gray-600 mb-6 flex-1 text-lg">
+                {sector.description}
+              </p>
+              <a href="/contact" class="inline-block text-[#1D3A75] font-bold hover:underline">
+                Discuss your project &rarr;
+              </a>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
 </Layout>
